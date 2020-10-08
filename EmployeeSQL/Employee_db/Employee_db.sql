@@ -35,13 +35,13 @@
 -- LIMIT 100;
 
 -- CREATE TABLE Employees (
---     emp_no INT   NOT NULL,
+--     emp_no INTEGER   NOT NULL,
 --     emp_title VARCHAR(5)   NOT NULL,
 --     birth_date VARCHAR(10)   NOT NULL,
 --     first_name VARCHAR(20)   NOT NULL,
 --     last_name VARCHAR(20)   NOT NULL,
 --     sex VARCHAR(2)   NOT NULL,
---     hire_date DATE   NOT NULL,
+--     hire_date VARCHAR(20)  NOT NULL,
 --     CONSTRAINT pk_Employees PRIMARY KEY (
 --         emp_no
 --      )
@@ -78,8 +78,12 @@
 -- FROM Titles
 -- LIMIT 100;
 
-SELECT employees.emp_no, last_name, first_name, sex, salary
-FROM employees
-INNER JOIN salaries ON salaries.emp_no = employees.emp_no;
+-- -- List the following details of each employee: employee number, last name, first name, sex, and salary.
+-- SELECT employees.emp_no, last_name, first_name, sex, salary
+-- FROM employees
+-- INNER JOIN salaries ON salaries.emp_no = employees.emp_no;
 
-
+-- List first name, last name, and hire date for employees who were hired in 1986.
+-- SELECT last_name, first_name, hire_date
+-- FROM Employees
+-- WHERE hire_date like '%%/%%/1986';
