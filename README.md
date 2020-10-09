@@ -2,6 +2,8 @@
 
 ![sql.png](sql.png)
 
+Inside of the EmployeeSQL folder is the Employee_db folder and the Employee_db-ERD. Inside of the Employee_db folder, you will find the Employee_db-schema file and the Employee_db-queries file.
+
 ## Background
 
 It is a beautiful spring day, and it is two weeks since you have been hired as a new data engineer at Pewlett Hackard. Your first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
