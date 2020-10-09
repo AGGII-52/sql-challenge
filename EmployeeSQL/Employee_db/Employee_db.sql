@@ -81,7 +81,7 @@
 -- -- List the following details of each employee: employee number, last name, first name, sex, and salary.
 -- SELECT employees.emp_no, last_name, first_name, sex, salary
 -- FROM employees
--- INNER JOIN salaries ON salaries.emp_no = employees.emp_no;
+-- JOIN salaries ON salaries.emp_no = employees.emp_no;
 
 -- -- List first name, last name, and hire date for employees who were hired in 1986.
 -- SELECT last_name, first_name, hire_date
@@ -92,10 +92,16 @@
 -- SELECT Departments.dept_no, Departments.dept_name, Department_Manager.emp_no, Employees.last_name, Employees.first_name
 -- FROM Departments
 -- JOIN Department_Manager ON Departments.dept_no = Department_Manager.dept_no
--- JOIN Employees ON Department_Manager.emp_no = Employees.emp_no
+-- JOIN Employees ON Department_Manager.emp_no = Employees.emp_no;
 
 -- -- List the department of each employee with the following information: employee number, last name, first name, and department name.
 -- SELECT Department_Employees.emp_no, Departments.dept_name, Employees.last_name, Employees.first_name
 -- FROM Department_Employees
 -- JOIN Employees ON Department_Employees.emp_no = Employees.emp_no
--- Join Departments ON Department_Employees.dept_no = Departments.dept_no
+-- Join Departments ON Department_Employees.dept_no = Departments.dept_no;
+
+-- -- List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+-- SELECT first_name, last_name, sex
+-- FROM Employees
+-- WHERE first_name = 'Hercules'
+-- AND last_name LIKE 'B%';
