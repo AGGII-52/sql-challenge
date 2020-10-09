@@ -88,8 +88,14 @@
 -- FROM Employees
 -- WHERE hire_date like '%%/%%/1986';
 
--- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+-- -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
 -- SELECT Departments.dept_no, Departments.dept_name, Department_Manager.emp_no, Employees.last_name, Employees.first_name
 -- FROM Departments
 -- JOIN Department_Manager ON Departments.dept_no = Department_Manager.dept_no
 -- JOIN Employees ON Department_Manager.emp_no = Employees.emp_no
+
+-- -- List the department of each employee with the following information: employee number, last name, first name, and department name.
+-- SELECT Department_Employees.emp_no, Departments.dept_name, Employees.last_name, Employees.first_name
+-- FROM Department_Employees
+-- JOIN Employees ON Department_Employees.emp_no = Employees.emp_no
+-- Join Departments ON Department_Employees.dept_no = Departments.dept_no
